@@ -1,0 +1,6 @@
+framework module Pods_WNetKit_Example {
+  umbrella header "Pods-WNetKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

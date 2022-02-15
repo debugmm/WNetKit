@@ -1,0 +1,18 @@
+PODS:
+  - WNetKit (0.0.1):
+    - WNetKit/WNetFramework (= 0.0.1)
+  - WNetKit/WNetFramework (0.0.1)
+
+DEPENDENCIES:
+  - WNetKit (from `../`)
+
+EXTERNAL SOURCES:
+  WNetKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WNetKit: eebf63e44640c93355fa7f4e80cad06b7c1064f5
+
+PODFILE CHECKSUM: 8c997462c069c10bf80e4922c323a9adb5ab0c8a
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+framework module WNetKit {
+  umbrella header "WNetKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

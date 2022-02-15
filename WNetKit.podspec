@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WNetKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of WNetKit.'
+  s.version          = '0.0.1'
+  s.summary          = 'WNetKit is iOS Cronet Framework'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,27 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  WNetKit is iOS Cronet Framework.
                        DESC
 
-  s.homepage         = 'https://github.com/abuglife/WNetKit'
+  s.homepage         = 'https://gitlab.weibo.cn/wns/wnet'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'abuglife' => 'jungao@staff.weibo.com' }
-  s.source           = { :git => 'https://github.com/abuglife/WNetKit.git', :tag => s.version.to_s }
+  s.license          = 'Private'
+  s.author           = { "abuglife" => "abuglife@qq.com" }
+  # { :git => 'https://github.com/abuglife/WNetKit.git', :tag => s.version }
+  s.source           = { :git => 'https://github.com/abuglife/WNetKit.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'WNetKit/Classes/**/*'
+  # NetKit
+  s.source_files = 'NetKit/**/*.{h,m}'
   
+  s.subspec "WNetFramework" do |ss|
+    ss.vendored_frameworks = 'WNetFramework/*.framework'
+    ss.source_files = 'WNetFramework/**/*.{h,m}'
+  end
+
   # s.resource_bundles = {
   #   'WNetKit' => ['WNetKit/Assets/*.png']
   # }
